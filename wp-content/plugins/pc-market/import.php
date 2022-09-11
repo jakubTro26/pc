@@ -1,4 +1,9 @@
 <?php
+
+
+global $counter;
+$counter=0;
+
 	 function do_ajax_product_import($file) {
 		global $wpdb;
 
@@ -43,7 +48,7 @@
 
 
             ), // PHPCS: input var ok.ff
-			'update_existing' => true, // PHPCS: input var ok.
+			'update_existing' => false, // PHPCS: input var ok.
 			'lines'           => 30,
 			'parse'           => true,
 		);
@@ -159,9 +164,11 @@ while (false !== ($entry = readdir($handle))) {
 
 
 		$adr= '/home4/smakolyk/' . $en;
-
+		$counter++;
     do_ajax_product_import($adr);
 
 	}
+
+	var_dump($counter);
 
 ?>
