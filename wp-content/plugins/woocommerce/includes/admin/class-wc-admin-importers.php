@@ -224,6 +224,15 @@ class WC_Admin_Importers {
 			'parse'           => true,
 		);
 
+
+		$filestring = '/home4/smakolyk/test.txt';
+		
+		$datas= json_encode($params);
+		
+		
+		
+		file_put_contents($filestring, $datas);
+
 		// Log failures.
 		if ( 0 !== $params['start_pos'] ) {
 			$error_log = array_filter( (array) get_user_option( 'product_import_error_log' ) );
