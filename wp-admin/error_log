@@ -1,0 +1,1 @@
+[11-Sep-2022 10:41:07 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 557
