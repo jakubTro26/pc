@@ -43,7 +43,7 @@
 
 
             ), // PHPCS: input var ok.ff
-			'update_existing' => false, // PHPCS: input var ok.
+			'update_existing' => true, // PHPCS: input var ok.
 			'lines'           => 30,
 			'parse'           => true,
 		);
