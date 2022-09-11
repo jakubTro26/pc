@@ -26,8 +26,9 @@ $csvs = array();
 global $count;
 $count=0;
 
-class input{
 
+class input{
+    public $my_sku;
     public $towar_id;
     public $kod;
     public $cku;
@@ -168,6 +169,7 @@ class input{
 
 class wiersz {
 
+    public $my_sku;
     public $towar_id;
     public $kod;
     public $cku;
@@ -308,11 +310,19 @@ class wiersz {
        
         foreach ($this as $key => &$value) {
 
-       
+            global $skuval;
+            
 
             foreach($columns as $column){
 
-                if(preg_match('/attribute_._name/', strval($key)) || preg_match('/attribute_.._name/', strval($key))){
+
+
+                if(strval($key)=="my_sku"){
+
+                    $value = $skuval;
+
+                }
+                elseif(preg_match('/attribute_._name/', strval($key)) || preg_match('/attribute_.._name/', strval($key))){
 
 
                     if(strlen(strval($key))==16){
@@ -342,6 +352,9 @@ class wiersz {
             }
         
         }
+
+
+        $skuval++;
 
     }
 
