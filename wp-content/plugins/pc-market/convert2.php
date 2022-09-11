@@ -319,6 +319,9 @@ class wiersz {
 
                 if(strval($key)=="my_sku"){
 
+                    if($skuval==0){
+                        $skuval=1;
+                    }
                     $value = $skuval;
 
                 }
