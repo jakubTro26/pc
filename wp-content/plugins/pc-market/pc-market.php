@@ -120,6 +120,8 @@ if($action=='convert'){
 
 if($action=='import'){
 
+    ini_set('max_execution_time', '600');
+    set_time_limit(600);
 
     require_once ABSPATH .  'wp-content/plugins/pc-market/import.php';
 
