@@ -50,7 +50,7 @@ $counter=0;
 
             ), // PHPCS: input var ok.ff
 			'update_existing' => true, // PHPCS: input var ok.
-			'lines'           => 30,
+			'lines'           => 40,
 			'parse'           => true,
 		);
 
