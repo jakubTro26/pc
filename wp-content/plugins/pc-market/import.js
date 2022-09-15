@@ -1,6 +1,6 @@
 function importing(){
 
-    const fs = require('fs');
+    import * as fs from 'fs';
 
     var loc = window.location.pathname;
     var dir = loc.substring(0, loc.lastIndexOf('/'));
