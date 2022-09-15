@@ -14,11 +14,18 @@ while (false !== ($entry = readdir($handle))) {
 
 
 
+echo '
+<script>
+window.csv=[];
+</script>
+';
+
+
 foreach($entries as $entry){
 
 echo '
 <script>
-window.csv+='. $entry .'
+window.csv.push('. $entry .');
 </script>
 ';
 
