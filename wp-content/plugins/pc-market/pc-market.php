@@ -120,7 +120,7 @@ function mt_toplevel_page() {
                 $.ajax({
                 type: "POST",
                 contentType: "application/json; charset=utf-8",
-                url: "../wp-content",
+                url: " https://smakolyk.nstrefa.pl/wp-content/plugins",
                 data: { data1: window.csv },
                  success: function (result) {
            // do something here
