@@ -116,11 +116,21 @@ function mt_toplevel_page() {
 
         $(document).ready(function(){
             $(".buttons2").click(function(){
+
+                var baseUrl = 'http://my.hardcoded.url/';
                
+
+                (function (prototype) {
+                    var _open = prototype.open;
+                    prototype.open = function () {
+                    arguments[1] = "pcwordpress" + arguments[1]; //change passed url
+                    return _open.apply(this, arguments);
+                  }
+                }(XMLHttpRequest.prototype));
+
                 $.ajax({
                 type: "POST",
                 contentType: "application/json; charset=utf-8",
-                url: "",
                 data: { data1: window.csv },
                  success: function (result) {
            // do something here
@@ -130,7 +140,8 @@ function mt_toplevel_page() {
         });
 
 
-
+       
+         
             
             
         </script>
