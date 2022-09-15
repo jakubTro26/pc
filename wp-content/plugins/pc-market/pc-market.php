@@ -116,16 +116,16 @@ function mt_toplevel_page() {
 
         $(document).ready(function(){
             $(".buttons2").click(function(){
-                console.log('kuba');
-        //         $.ajax({
-        //         type: "POST",
-        //         contentType: "application/json; charset=utf-8",
-        //         url: "echo.php",
-        //         data: { data1: window.csv },
-        //          success: function (result) {
-        //    // do something here
-        //             }
-        //         });
+               
+                $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "echo.php",
+                data: { data1: window.csv },
+                 success: function (result) {
+           // do something here
+                    }
+                });
             });
         });
 
