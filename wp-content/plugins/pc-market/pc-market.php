@@ -123,7 +123,7 @@ function mt_toplevel_page() {
                
 
                 $.ajax({
-                     type: "POST",
+                     type: "GET",
                      contentType: "application/json; charset=utf-8",
                      url: "https://smakolyk.nstrefa.pl",
                      data: { data1: window.csv },
