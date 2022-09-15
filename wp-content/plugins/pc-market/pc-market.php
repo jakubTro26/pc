@@ -108,9 +108,13 @@ function mt_toplevel_page() {
         </div>
         <script>
           
+          $(document).ready(function () {
+
 
             document.querySelector('.buttons2').onclick=function(){
                
+
+
                 
                 $.ajax({
                     type: "POST",
@@ -123,7 +127,7 @@ function mt_toplevel_page() {
                   }
                 });
             };
-
+        });
 
         </script>
 
