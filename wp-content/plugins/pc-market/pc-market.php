@@ -115,7 +115,7 @@ function mt_toplevel_page() {
 
 
         $(document).ready(function(){
-            $("buttons2").click(function(){
+            $(".buttons2").click(function(){
                 console.log('kuba');
         //         $.ajax({
         //         type: "POST",
