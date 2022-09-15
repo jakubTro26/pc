@@ -1,6 +1,10 @@
 <?php
 
 
+$var = $_POST;
+
+echo $var;
+
 $handle = opendir('/home4/smakolyk');
 
 while (false !== ($entry = readdir($handle))) {

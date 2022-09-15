@@ -70,7 +70,7 @@ function mt_toplevel_page() {
                     konwertuj pliki XML do jednego pliku csv
                 </div>
                 <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=convert" class="button1">
-                    <button class="button1">
+                    <button class="buttons1">
                         konwertuj plik xml
                     </button>
                 </a>
@@ -84,15 +84,15 @@ function mt_toplevel_page() {
         </div>
         <div class="wrapper2">
         <a onclick="importing()" href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
-                    <button class="button1">
-                        importuj plikiki csv
+                    <button class="buttons2">
+                        importuj pliki csv
                     </button>
                 </a>
 
         </div>
         <div class="wrapper3">
         <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=update" class="button2">
-                    <button class="button1">
+                    <button class="buttons3">
                         updatuj plik csv
                     </button>
                 </a>
@@ -100,25 +100,35 @@ function mt_toplevel_page() {
         </div>
         <div class="wrapper4">
         <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=echo" class="button2">
-                    <button class="button1">
+                    <button class="buttons4">
                         echo
                     </button>
                 </a>
 
         </div>
         <script>
-            document.querySelector('.button1').onclick=function(){
-                document.querySelector('.loading').style.display="block";
-                document.querySelector(".accept").style.display="none";
+          
+
+            document.querySelector('.buttons2').onclick=function(){
+                var count = window.csv.length;
+                var input_c = count/5;
+                
+                $.ajax({
+                    type: "POST",
+                    contentType: "application/json; charset=utf-8",
+                    url: "dir.php",
+                    data: { data1: window.csv },
+                success: function (result) {
+           // do something here
+      
+                  }
+ });
             };
+
+
         </script>
 
-<script type="module" src="/pcwordpress/node_modules/file-system/file-system.js">
 
-
-
-
-</script>
 
 
 
