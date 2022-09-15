@@ -50,7 +50,7 @@ function mt_toplevel_page() {
         add_filter( 'woocommerce_product_csv_importer_check_import_file_path', '__return_false' );
         wp_enqueue_style( 'custom-design', site_url() . '/wp-content/plugins/pc-market/design.css' );
 
-        wp_enqueue_script( 'custom-javascript', site_url() . '/wp-content/plugins/pc-market/import.js' );
+      //  wp_enqueue_script( 'custom-javascript', site_url() . '/wp-content/plugins/pc-market/import.js' );
 
     if ( isset( $_GET['action'] ) ) {
         $action = wp_unslash( $_GET['action'] );
@@ -104,6 +104,27 @@ function mt_toplevel_page() {
                 document.querySelector(".accept").style.display="none";
             };
         </script>
+
+<script type="module" src="/home4/smakolyk/public_html/pcwordpress/node_modules">
+
+
+function importing(){
+
+import * as fs from 'fs';
+
+var loc = window.location.pathname;
+var dir = loc.substring(0, loc.lastIndexOf('/'));
+
+fs.readdir(dir, (err, files) => {
+    files.forEach(file => {
+      console.log(file);
+    });
+  });
+
+}
+
+
+</script>
 
 
 
