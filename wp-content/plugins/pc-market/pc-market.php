@@ -83,7 +83,7 @@ function mt_toplevel_page() {
             </div>
         </div>
         <div class="wrapper2">
-        <a onclick="importing()" href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
+        <a href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
                     <button class="buttons2">
                         importuj pliki csv
                     </button>
@@ -110,8 +110,7 @@ function mt_toplevel_page() {
           
 
             document.querySelector('.buttons2').onclick=function(){
-                var count = window.csv.length;
-                var input_c = count/5;
+               
                 
                 $.ajax({
                     type: "POST",
