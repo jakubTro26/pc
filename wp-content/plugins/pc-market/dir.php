@@ -5,7 +5,7 @@ $handle = opendir('/home4/smakolyk');
 
 while (false !== ($entry = readdir($handle))) {
 
-    if(str_contains($entry,'exp')){
+    if(str_contains($entry,'test')){
 
         $entries[]=$entry;
     
