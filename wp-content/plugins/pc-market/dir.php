@@ -25,7 +25,7 @@ foreach($entries as $entry){
 
 echo '
 <script>
-window.csv.push\"('. $entry .'\");
+window.csv.push("'. $entry .'");
 </script>
 ';
 
