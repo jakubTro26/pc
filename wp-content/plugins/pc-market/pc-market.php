@@ -105,7 +105,7 @@ function mt_toplevel_page() {
             };
         </script>
 
-<script type="module" src="/pcwordpress/node_modules/file-system">
+<script type="module" src="/pcwordpress/node_modules/file-system/file-system.js">
 
 
 function importing(){
