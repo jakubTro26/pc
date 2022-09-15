@@ -117,7 +117,7 @@ function mt_toplevel_page() {
         $(document).ready(function(){
             $(".buttons2").click(function(){
 
-               console.log(window.csv);
+             
                
 
                
