@@ -83,7 +83,7 @@ function mt_toplevel_page() {
             </div>
         </div>
         <div class="wrapper2">
-        <a href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
+        <a  class="button2">
                     <button class="buttons2">
                         importuj pliki csv
                     </button>
@@ -91,7 +91,7 @@ function mt_toplevel_page() {
 
         </div>
         <div class="wrapper3">
-        <a   class="button2">
+        <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=update" class="button2">
                     <button class="buttons3">
                         updatuj plik csv
                     </button>
