@@ -106,9 +106,9 @@ function mt_toplevel_page() {
                 </a>
 
         </div>
-        <script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
           
-          $(document).ready(function () {
+       
 
 
             document.querySelector('.buttons2').onclick=function(){
@@ -127,7 +127,7 @@ function mt_toplevel_page() {
                   }
                 });
             };
-        });
+    
 
         </script>
 
