@@ -83,7 +83,7 @@ function mt_toplevel_page() {
             </div>
         </div>
         <div class="wrapper2">
-        <a href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
+        <a onclick="importing()" href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
                     <button class="button1">
                         importuj plikiki csv
                     </button>
