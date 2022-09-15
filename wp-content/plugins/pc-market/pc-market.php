@@ -117,25 +117,16 @@ function mt_toplevel_page() {
         $(document).ready(function(){
             $(".buttons2").click(function(){
 
-                var baseUrl = 'http://my.hardcoded.url/';
+               
                
 
-                (function (prototype) {
-                    var _open = prototype.open;
-                    prototype.open = function () {
-                    arguments[1] = "pcwordpress" + arguments[1]; //change passed url
-                    return _open.apply(this, arguments);
-                  }
-                }(XMLHttpRequest.prototype));
+               
 
-                $.ajax({
-                type: "POST",
-                contentType: "application/json; charset=utf-8",
-                data: { data1: window.csv },
-                 success: function (result) {
-           // do something here
-                    }
-                });
+                var xhr = new XMLHttpRequest();
+                    xhr.open("POST", "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php");
+                    //xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
+                    xhr.onload = requestComplete;
+                    xhr.send(window.csv);
             });
         });
 
