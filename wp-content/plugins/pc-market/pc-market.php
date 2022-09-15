@@ -98,6 +98,14 @@ function mt_toplevel_page() {
                 </a>
 
         </div>
+        <div class="wrapper4">
+        <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=echo" class="button2">
+                    <button class="button1">
+                        echo
+                    </button>
+                </a>
+
+        </div>
         <script>
             document.querySelector('.button1').onclick=function(){
                 document.querySelector('.loading').style.display="block";
@@ -158,6 +166,14 @@ if($action=='update'){
 
 
 }
+if($action=='echo'){
+
+
+     require_once ABSPATH .  'wp-content/plugins/pc-market/dir.php';
+ 
+ 
+ 
+ }
 
 
 
