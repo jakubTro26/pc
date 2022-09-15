@@ -3,7 +3,11 @@
 $var = json_encode($_POST);
 
 
-echo 'kuba';
-echo $var;
+foreach($var as $v){
+
+    echo $v;
+
+
+}
 
 ?>
