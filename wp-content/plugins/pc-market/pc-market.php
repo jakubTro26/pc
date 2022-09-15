@@ -113,12 +113,12 @@ function mt_toplevel_page() {
                 var count = window.csv.length;
                 var input_c = count/5;
                 
-                $.ajax({
-                    type: "POST",
-                    contentType: "application/json; charset=utf-8",
-                    url: "dir.php",
-                    data: { data1: window.csv },
-                success: function (result) {
+                // $.ajax({
+                //     type: "POST",
+                //     contentType: "application/json; charset=utf-8",
+                //     url: "dir.php",
+                //     data: { data1: window.csv },
+                // success: function (result) {
            // do something here
       
                   }
