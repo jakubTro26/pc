@@ -106,18 +106,16 @@ function mt_toplevel_page() {
                 </a>
 
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-          
-       
-
-
-            document.querySelector('.buttons2').onclick=function(){
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script> 
+        
+        document.querySelector('.buttons2').onclick=function(){
                 
                 console.log('kuba');
 
             };
-    
-
+            
+            
         </script>
 
 
