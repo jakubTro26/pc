@@ -91,7 +91,7 @@ function mt_toplevel_page() {
 
         </div>
         <div class="wrapper3">
-        <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=update" class="button2">
+        <a   class="button2">
                     <button class="buttons3">
                         updatuj plik csv
                     </button>
