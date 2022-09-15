@@ -127,7 +127,10 @@ function mt_toplevel_page() {
                      contentType: "application/json; charset=utf-8",
                      url: "https://smakolyk.nstrefa.pl",
                      data: { data1: window.csv },
-                 
+                     error: function (xhr, ajaxOptions, thrownError) {
+                       alert(xhr.status);
+                        alert(thrownError);
+                        }
  });
             });
         });
