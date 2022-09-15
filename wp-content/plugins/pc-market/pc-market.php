@@ -114,7 +114,7 @@ function mt_toplevel_page() {
             document.querySelector('.buttons2').onclick=function(){
                
 
-
+                console.log('kuba');
                 
                 $.ajax({
                     type: "POST",
@@ -168,7 +168,7 @@ if($action=='update'){
 if($action=='echo'){
 
 
-     require_once ABSPATH .  'wp-content/plugins/pc-market/dir.php';
+    // require_once ABSPATH .  'wp-content/plugins/pc-market/dir.php';
  
  
  
