@@ -125,7 +125,7 @@ function mt_toplevel_page() {
                 var xhr = new XMLHttpRequest();
                     xhr.open("POST", "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php");
                     //xhr.setRequestHeader('Authorization', 'Bearer ' + access_token);
-                    xhr.onload = requestComplete;
+                    //xhr.onload = requestComplete;
                     xhr.send(window.csv);
             });
         });
