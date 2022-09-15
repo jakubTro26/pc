@@ -123,15 +123,20 @@ function mt_toplevel_page() {
                
 
                 $.ajax({
-                     type: "GET",
-                     contentType: "application/json; charset=utf-8",
-                     url: "https://smakolyk.nstrefa.pl",
-                     data: { data1: window.csv },
-                    //  error: function (xhr, ajaxOptions, thrownError) {
-                    //    alert(xhr.status);
-                    //     alert(thrownError);
-                    //     }
- });
+    url: "https://smakolyk.nstrefa.pl/wp-content/plugins/pc-market/echo.php",
+    data: { 
+        "VarA": window.csv 
+        
+    },
+    cache: false,
+    type: "POST",
+    success: function(response) {
+        console.log(response);
+    },
+    error: function(xhr) {
+        console.log(xhr);
+    }
+});
             });
         });
 
