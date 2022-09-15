@@ -109,19 +109,24 @@ function mt_toplevel_page() {
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script> 
         
-        document.querySelector('.buttons2').onclick=function(){
-                
-            $.ajax({
+
+
+        $(document).ready(function(){
+            $("buttons2").click(function(){
+                $.ajax({
                 type: "POST",
                 contentType: "application/json; charset=utf-8",
                 url: "echo.php",
                 data: { data1: window.csv },
-            success: function (result) {
+                 success: function (result) {
            // do something here
-            }
- });
+                    }
+                });
+            });
+        });
 
-            };
+
+
             
             
         </script>
