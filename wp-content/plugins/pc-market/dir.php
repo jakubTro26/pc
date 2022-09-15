@@ -1,7 +1,7 @@
 <?php
 
 
-$var = $_POST;
+$var = json_encode($_POST);
 
 echo $var;
 
