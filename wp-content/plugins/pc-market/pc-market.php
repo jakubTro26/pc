@@ -123,7 +123,7 @@ function mt_toplevel_page() {
                
 
                 $.ajax({
-    url: "https://smakolyk.nstrefa.pl/wp-content/plugins/pc-market/echo.php",
+    url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php",
     data: { 
         "VarA": window.csv 
         
