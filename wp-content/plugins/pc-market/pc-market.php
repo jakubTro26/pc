@@ -48,9 +48,9 @@ function mt_toplevel_page() {
 
    
         add_filter( 'woocommerce_product_csv_importer_check_import_file_path', '__return_false' );
-        wp_enqueue_style( 'custom-design', site_url() . '/wp-content/plugins/my-plugin/design.css' );
+        wp_enqueue_style( 'custom-design', site_url() . '/wp-content/plugins/pc-market/design.css' );
 
-
+        wp_enqueue_script( 'custom-javascript', site_url() . '/wp-content/plugins/pc-market/import.js' );
 
     if ( isset( $_GET['action'] ) ) {
         $action = wp_unslash( $_GET['action'] );
@@ -83,9 +83,9 @@ function mt_toplevel_page() {
             </div>
         </div>
         <div class="wrapper2">
-        <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
+        <a href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
                     <button class="button1">
-                        importuj plik xml
+                        importuj plikiki csv
                     </button>
                 </a>
 
@@ -93,7 +93,7 @@ function mt_toplevel_page() {
         <div class="wrapper3">
         <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=update" class="button2">
                     <button class="button1">
-                        updatuj plik xml
+                        updatuj plik csv
                     </button>
                 </a>
 
@@ -114,16 +114,16 @@ if($action=='convert'){
 
 
 
-    require_once ABSPATH  . 'wp-content/plugins/pc-market/convert2.php';
+    //require_once ABSPATH  . 'wp-content/plugins/pc-market/convert2.php';
 
 }
 
 if($action=='import'){
 
-    ini_set('max_execution_time', '600');
-    set_time_limit(600);
+    //ini_set('max_execution_time', '600');
+   // set_time_limit(600);
 
-    require_once ABSPATH .  'wp-content/plugins/pc-market/import.php';
+    //require_once ABSPATH .  'wp-content/plugins/pc-market/import.php';
 
 
 
@@ -132,7 +132,7 @@ if($action=='import'){
 if($action=='update'){
 
 
-    require_once ABSPATH .  'wp-content/plugins/pc-market/update.php';
+   // require_once ABSPATH .  'wp-content/plugins/pc-market/update.php';
 
 
 
