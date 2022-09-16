@@ -34,7 +34,7 @@ add_action('cron','cron_function');
         file_put_contents($file1, print_r('kuba',true),FILE_APPEND);
 
 
-        require_once ABSPATH  . 'wp-content/plugins/pc-market/convert.php';
+        //require_once ABSPATH  . 'wp-content/plugins/pc-market/convert.php';
 
 
 }
@@ -106,6 +106,14 @@ function mt_toplevel_page() {
                 </a>
 
         </div>
+        <div class="wrapper5">
+        <a  class="button2">
+                    <button class="buttons5">
+                        chunk
+                    </button>
+                </a>
+
+        </div>
         <script
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
@@ -115,28 +123,42 @@ function mt_toplevel_page() {
 
 
         $(document).ready(function(){
+
+            $(".buttons5").click(function(){
+
+
+            });
+
+
+
             $(".buttons2").click(function(){
 
+             var main_array = window.csv;
              
-               
+             for(var i=0;i<main_array.length;i++){
+
+
+
+
+             }
 
                
 
                 $.ajax({
-    url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php",
-    data: { 
-        "VarA": window.csv 
+                    url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php",
+                    data: { 
+                                "VarA": window.csv 
         
-    },
-    cache: false,
-    type: "POST",
-    success: function(response) {
-        console.log(response);
-    },
-    error: function(xhr) {
-        console.log(xhr);
-    }
-});
+                          },
+                    cache: false,
+                    type: "POST",
+                success: function(response) {
+                    console.log(response);
+                    },
+                error: function(xhr) {
+                     console.log(xhr);
+                    }
+                    });
             });
         });
 
