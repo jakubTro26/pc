@@ -135,9 +135,8 @@ function mt_toplevel_page() {
 
                      var element = main_array.shift();
                      var array_elements={};
-                     array_elements['array' + k]={};
-                     var name = 'array'+k;
-                     array_elements[name][element];
+                     array_elements.push(element);
+                   
                     
                     
                      
