@@ -125,6 +125,22 @@ function mt_toplevel_page() {
         $(document).ready(function(){
 
             $(".buttons5").click(function(){
+                var main_array = window.csv;
+                var sub_arrays;
+                var count_of_arrays=main_array.length/20;
+            
+            for(var k=0; k<count_of_arrays;k++)
+            {
+                for(var i=0;i<20;i++){
+
+                     var element = main_array.shift();
+                     var array_elements;
+                     (array_elements+k).push(element); 
+                    
+                     
+
+                     }
+            }
 
 
             });
@@ -133,14 +149,7 @@ function mt_toplevel_page() {
 
             $(".buttons2").click(function(){
 
-             var main_array = window.csv;
-             
-             for(var i=0;i<main_array.length;i++){
 
-
-
-
-             }
 
                
 
