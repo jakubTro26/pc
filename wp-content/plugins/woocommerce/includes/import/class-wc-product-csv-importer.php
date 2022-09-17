@@ -7,7 +7,7 @@
  */
 
 
- echo 'kuba';
+ 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }

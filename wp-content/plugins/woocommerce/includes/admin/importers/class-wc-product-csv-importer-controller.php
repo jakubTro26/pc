@@ -5,6 +5,9 @@
  * @package WooCommerce\Admin\Importers
  */
 
+
+echo 'kuba';
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
