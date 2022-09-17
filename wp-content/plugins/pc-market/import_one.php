@@ -18,7 +18,7 @@ set_time_limit(6000);
 		
       
 
-        echo 'kuba';
+       
 
 
         
