@@ -122,6 +122,14 @@ function mt_toplevel_page() {
                 </a>
 
         </div>
+        <div class="wrapper7">
+        <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=import" class="button2">
+                    <button class="buttons4">
+                        import
+                    </button>
+                </a>
+
+        </div>
         <script
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="

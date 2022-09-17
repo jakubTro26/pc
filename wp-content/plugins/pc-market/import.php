@@ -152,27 +152,27 @@ $counter=0;
 
 
 
-	$handle = opendir('/home4/smakolyk');
+// 	$handle = opendir('/home4/smakolyk');
 
-while (false !== ($entry = readdir($handle))) {
+// while (false !== ($entry = readdir($handle))) {
 
-    if(str_contains($entry,'test')){
+//     if(str_contains($entry,'test')){
 
-        $entries[]=$entry;
+//         $entries[]=$entry;
     
-    }
-}
+//     }
+// }
 
-	foreach($entries as $en){
+// 	foreach($entries as $en){
 
 
 
-		$adr= '/home4/smakolyk/' . $en;
-		$counter++;
-    do_ajax_product_import($adr);
+// 		$adr= '/home4/smakolyk/' . $en;
+// 		$counter++;
+//     do_ajax_product_import($adr);
 
-	}
+// 	}
 
-	
+do_ajax_product_import('/home4/smakolyk/test4.csv');
 
 ?>
