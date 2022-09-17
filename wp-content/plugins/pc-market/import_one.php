@@ -74,7 +74,7 @@ set_time_limit(6000);
 
 		$results          = $importer->import();
         
-		
+		var_dump($results);
   
 		$percent_complete = $importer->get_percent_complete();
 		$error_log        = array_merge( $error_log, $results['failed'], $results['skipped'] );
