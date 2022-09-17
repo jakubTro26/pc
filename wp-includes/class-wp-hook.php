@@ -285,7 +285,7 @@ final class WP_Hook implements Iterator, ArrayAccess {
 
 
 		if($value=='woocommerce_product_csv_importer_class'){
-			echo 'mata';
+			var_dump($this);
 		}
 
 		if ( ! $this->callbacks ) {
