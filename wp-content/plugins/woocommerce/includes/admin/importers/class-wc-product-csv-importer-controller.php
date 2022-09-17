@@ -6,11 +6,13 @@
  */
 
 
-echo 'kuba';
+
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+echo 'kuba';
 
 if ( ! class_exists( 'WP_Importer' ) ) {
 	return;
