@@ -7,11 +7,11 @@
  */
 
 
- echo 'kuba';
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
+echo 'kuba';
 /**
  * Include dependencies.
  */
