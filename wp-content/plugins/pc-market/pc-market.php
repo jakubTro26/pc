@@ -136,9 +136,10 @@ function mt_toplevel_page() {
                 for(var i=0;i<20;i++){
 
                      var element = main_array.shift();
-                     
-                     var l = array_elements.push(element);
-                   
+                     if(element!=undefined)
+                     {
+                        var l = array_elements.push(element);
+                     }
                     if(i==19){
                         var o = window.super_array.push(array_elements);
                     }
