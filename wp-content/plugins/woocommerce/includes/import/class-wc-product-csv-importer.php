@@ -9,6 +9,8 @@
 
 
 if ( ! defined( 'ABSPATH' ) ) {
+	
+	define( 'ABSPATH',  '/home4/smakolyk/pcwordpress' );
 	//exit;
 }
 

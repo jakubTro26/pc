@@ -3,9 +3,6 @@ ini_set('max_execution_time', '600');
 set_time_limit(600);
 
 
-if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
-}
 
 
 global $counter;
