@@ -63,7 +63,7 @@ set_time_limit(600);
 
 
 
-		$importer         = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
+		// $importer         = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
 		
 		
 		
@@ -72,77 +72,77 @@ set_time_limit(600);
 
 
 
-		//$results          = $importer->import();
+		// $results          = $importer->import();
         
 		
   
-		$percent_complete = $importer->get_percent_complete();
-		$error_log        = array_merge( $error_log, $results['failed'], $results['skipped'] );
+		// $percent_complete = $importer->get_percent_complete();
+		// $error_log        = array_merge( $error_log, $results['failed'], $results['skipped'] );
 
-		update_user_option( get_current_user_id(), 'product_import_error_log', $error_log );
+		// update_user_option( get_current_user_id(), 'product_import_error_log', $error_log );
 
-		if ( 100 === $percent_complete ) {
-			// @codingStandardsIgnoreStart.
-			$wpdb->delete( $wpdb->postmeta, array( 'meta_key' => '_original_id' ) );
-			$wpdb->delete( $wpdb->posts, array(
-				'post_type'   => 'product',
-				'post_status' => 'importing',
-			) );
-			$wpdb->delete( $wpdb->posts, array(
-				'post_type'   => 'product_variation',
-				'post_status' => 'importing',
-			) );
-			// @codingStandardsIgnoreEnd.
+		// if ( 100 === $percent_complete ) {
+		// 	// @codingStandardsIgnoreStart.
+		// 	$wpdb->delete( $wpdb->postmeta, array( 'meta_key' => '_original_id' ) );
+		// 	$wpdb->delete( $wpdb->posts, array(
+		// 		'post_type'   => 'product',
+		// 		'post_status' => 'importing',
+		// 	) );
+		// 	$wpdb->delete( $wpdb->posts, array(
+		// 		'post_type'   => 'product_variation',
+		// 		'post_status' => 'importing',
+		// 	) );
+		// 	// @codingStandardsIgnoreEnd.
 
-			// Clean up orphaned data.
-			$wpdb->query(
-				"
-				DELETE {$wpdb->posts}.* FROM {$wpdb->posts}
-				LEFT JOIN {$wpdb->posts} wp ON wp.ID = {$wpdb->posts}.post_parent
-				WHERE wp.ID IS NULL AND {$wpdb->posts}.post_type = 'product_variation'
-			"
-			);
-			$wpdb->query(
-				"
-				DELETE {$wpdb->postmeta}.* FROM {$wpdb->postmeta}
-				LEFT JOIN {$wpdb->posts} wp ON wp.ID = {$wpdb->postmeta}.post_id
-				WHERE wp.ID IS NULL
-			"
-			);
-			// @codingStandardsIgnoreStart.
-			$wpdb->query( "
-				DELETE tr.* FROM {$wpdb->term_relationships} tr
-				LEFT JOIN {$wpdb->posts} wp ON wp.ID = tr.object_id
-				LEFT JOIN {$wpdb->term_taxonomy} tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
-				WHERE wp.ID IS NULL
-				AND tt.taxonomy IN ( '" . implode( "','", array_map( 'esc_sql', get_object_taxonomies( 'product' ) ) ) . "' )
-			" );
-			// @codingStandardsIgnoreEnd.
+		// 	// Clean up orphaned data.
+		// 	$wpdb->query(
+		// 		"
+		// 		DELETE {$wpdb->posts}.* FROM {$wpdb->posts}
+		// 		LEFT JOIN {$wpdb->posts} wp ON wp.ID = {$wpdb->posts}.post_parent
+		// 		WHERE wp.ID IS NULL AND {$wpdb->posts}.post_type = 'product_variation'
+		// 	"
+		// 	);
+		// 	$wpdb->query(
+		// 		"
+		// 		DELETE {$wpdb->postmeta}.* FROM {$wpdb->postmeta}
+		// 		LEFT JOIN {$wpdb->posts} wp ON wp.ID = {$wpdb->postmeta}.post_id
+		// 		WHERE wp.ID IS NULL
+		// 	"
+		// 	);
+		// 	// @codingStandardsIgnoreStart.
+		// 	$wpdb->query( "
+		// 		DELETE tr.* FROM {$wpdb->term_relationships} tr
+		// 		LEFT JOIN {$wpdb->posts} wp ON wp.ID = tr.object_id
+		// 		LEFT JOIN {$wpdb->term_taxonomy} tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
+		// 		WHERE wp.ID IS NULL
+		// 		AND tt.taxonomy IN ( '" . implode( "','", array_map( 'esc_sql', get_object_taxonomies( 'product' ) ) ) . "' )
+		// 	" );
+		// 	// @codingStandardsIgnoreEnd.
 
-			// Send success.
-			// wp_send_json_success(
-			// 	array(
-			// 		'position'   => 'done',
-			// 		'percentage' => 100,
-			// 		'url'        => add_query_arg( array( '_wpnonce' => wp_create_nonce( 'woocommerce-csv-importer' ) ), admin_url( 'edit.php?post_type=product&page=product_importer&step=done' ) ),
-			// 		'imported'   => count( $results['imported'] ),
-			// 		'failed'     => count( $results['failed'] ),
-			// 		'updated'    => count( $results['updated'] ),
-			// 		'skipped'    => count( $results['skipped'] ),
-			// 	)
-			// );
-		} else {
-			// wp_send_json_success(
-			// 	array(
-			// 		'position'   => $importer->get_file_position(),
-			// 		'percentage' => $percent_complete,
-			// 		'imported'   => count( $results['imported'] ),
-			// 		'failed'     => count( $results['failed'] ),
-			// 		'updated'    => count( $results['updated'] ),
-			// 		'skipped'    => count( $results['skipped'] ),
-			// 	)
-			// );
-		}
+		// 	// Send success.
+		// 	// wp_send_json_success(
+		// 	// 	array(
+		// 	// 		'position'   => 'done',
+		// 	// 		'percentage' => 100,
+		// 	// 		'url'        => add_query_arg( array( '_wpnonce' => wp_create_nonce( 'woocommerce-csv-importer' ) ), admin_url( 'edit.php?post_type=product&page=product_importer&step=done' ) ),
+		// 	// 		'imported'   => count( $results['imported'] ),
+		// 	// 		'failed'     => count( $results['failed'] ),
+		// 	// 		'updated'    => count( $results['updated'] ),
+		// 	// 		'skipped'    => count( $results['skipped'] ),
+		// 	// 	)
+		// 	// );
+		// } else {
+		// 	// wp_send_json_success(
+		// 	// 	array(
+		// 	// 		'position'   => $importer->get_file_position(),
+		// 	// 		'percentage' => $percent_complete,
+		// 	// 		'imported'   => count( $results['imported'] ),
+		// 	// 		'failed'     => count( $results['failed'] ),
+		// 	// 		'updated'    => count( $results['updated'] ),
+		// 	// 		'skipped'    => count( $results['skipped'] ),
+		// 	// 	)
+		// 	// );
+		// }
 	}
 
 
