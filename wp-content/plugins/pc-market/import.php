@@ -72,7 +72,7 @@ $counter=0;
 		
 		
 		
-		var_dump($importer);
+		
 
 
 
