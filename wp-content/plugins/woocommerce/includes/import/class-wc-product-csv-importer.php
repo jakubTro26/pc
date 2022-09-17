@@ -15,11 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Include dependencies.
  */
+
+echo 'kuba';
+
 if ( ! class_exists( 'WC_Product_Importer', false ) ) {
 	include_once dirname( __FILE__ ) . '/abstract-wc-product-importer.php';
 }
 
-echo 'kuba';
 
 if ( ! class_exists( 'WC_Product_CSV_Importer_Controller', false ) ) {
 	include_once WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
