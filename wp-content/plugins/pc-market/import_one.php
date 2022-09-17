@@ -15,8 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		global $wpdb;
 
 
-
-
+		
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-admin/includes/class-wp-importer.php';
 		include_once  WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
 		include_once  WC_ABSPATH . 'includes/import/class-wc-product-csv-importer.php';
