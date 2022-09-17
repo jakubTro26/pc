@@ -6,7 +6,9 @@ set_time_limit(6000);
 if ( ! defined( 'WC_ABSPATH' ) ) {
 	define( 'WC_ABSPATH', '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/' );
 }
-
+if ( ! defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', '/home4/smakolyk/public_html/pcwordpress/' );
+}
 
 
 	 function do_ajax_product_import($file) {
