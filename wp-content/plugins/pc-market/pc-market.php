@@ -155,7 +155,7 @@ function mt_toplevel_page() {
                     
                     },
                 error: function(xhr) {
-                     console.log(xhr.error);
+                     console.log(xhr);
                     }
                     });
                     
