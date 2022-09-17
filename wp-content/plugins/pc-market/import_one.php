@@ -9,7 +9,7 @@ set_time_limit(6000);
 
 
 	
-		
+		echo 'kuba';
 
 		//check_ajax_referer( 'wc-product-import', 'security' );
        
