@@ -140,8 +140,11 @@ function mt_toplevel_page() {
 
                 var super_var = window.super_array;
 
-                console.log(super_var);
+                super_var.forEach(element => {
 
+                    console.log(element);
+                    
+                });
 
             });
 
