@@ -40,7 +40,8 @@ set_time_limit(6000);
 			'parse'           => true,
 		);
 
-        file_put_contents('/home4/smakolyk/data.txt',$params);
+        
+        file_put_contents('/home4/smakolyk/data.txt', print_r('kuba',true),FILE_APPEND);
         
 
 		// Log failures.
