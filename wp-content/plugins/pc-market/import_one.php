@@ -9,7 +9,7 @@ if ( ! defined( 'WC_ABSPATH' ) ) {
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', '/home4/smakolyk/public_html/pcwordpress/' );
 }
-define( 'WPINC', 'wp-includes' )
+define( 'WPINC', 'wp-includes' );
 
 	 function do_ajax_product_import($file) {
 		global $wpdb;
