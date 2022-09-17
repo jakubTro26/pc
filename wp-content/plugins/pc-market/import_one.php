@@ -17,8 +17,8 @@ set_time_limit(6000);
 		// 	wp_send_json_error( array( 'message' => __( 'Insufficient privileges to import products.', 'woocommerce' ) ) );
 		// }
 
-		include_once 'wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
-		include_once 'wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
+		include_once '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
+		include_once '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
         
 		// $file   = wc_clean( wp_unslash( $_POST['file'] ) ); // PHPCS: input var ok.
 		// $params = array(
