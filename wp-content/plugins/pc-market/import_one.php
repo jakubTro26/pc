@@ -74,7 +74,7 @@ set_time_limit(600);
 
 		$results          = $importer->import();
         
-		var_dump($results);
+		
   
 		$percent_complete = $importer->get_percent_complete();
 		$error_log        = array_merge( $error_log, $results['failed'], $results['skipped'] );
@@ -153,20 +153,20 @@ set_time_limit(600);
 $var =$_POST;
 
 
-do_ajax_product_import("/home4/smakolyk/test44.csv");
+do_ajax_product_import('/home4/smakolyk/test44.csv');
 
-foreach($var as $v){
-    foreach ($v as $adr){
-        $string = '/home4/smakolyk/' . $adr;
-        var_dump($string);
-       // do_ajax_product_import($string);
+// foreach($var as $v){
+//     foreach ($v as $adr){
+//         $string = '/home4/smakolyk/' . $adr;
+//         var_dump($string);
+//        // do_ajax_product_import($string);
       
-    }
+//     }
 
 
 
     
-}
+// }
 
 
 
