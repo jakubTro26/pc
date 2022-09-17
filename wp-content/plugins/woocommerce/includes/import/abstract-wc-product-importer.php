@@ -11,9 +11,10 @@ use Automattic\WooCommerce\Utilities\NumberUtil;
 
 
 if ( ! defined( 'ABSPATH' ) ) {
+	echo 'kuba';
 	exit;
 }
-echo 'kuba';
+
 /**
  * Include dependencies.
  */
