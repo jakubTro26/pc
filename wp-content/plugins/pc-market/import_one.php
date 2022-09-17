@@ -63,7 +63,7 @@ set_time_limit(600);
 
 
 
-		// $importer         = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
+		 $importer         = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
 		
 		
 		
