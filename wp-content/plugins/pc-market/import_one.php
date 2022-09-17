@@ -8,7 +8,7 @@ set_time_limit(600);
 		global $wpdb;
 
 
-	
+	var_dump($file);
 		
 
 		//check_ajax_referer( 'wc-product-import', 'security' );
