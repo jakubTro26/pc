@@ -284,8 +284,8 @@ final class WP_Hook implements Iterator, ArrayAccess {
 	public function apply_filters( $value, $args ) {
 
 
-		if($value=='/home4/smakolyk/test4.csv'){
-			//var_dump($this);
+		if($value==='/home4/smakolyk/test4.csv'){
+			var_dump($this);
 		}
 
 		if ( ! $this->callbacks ) {
