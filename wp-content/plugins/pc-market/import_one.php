@@ -8,7 +8,7 @@ set_time_limit(6000);
 		global $wpdb;
 
 
-	var_dump($file);
+	var_dump(WC_ABSPATH);
 		
 
 		//check_ajax_referer( 'wc-product-import', 'security' );
@@ -63,7 +63,7 @@ set_time_limit(6000);
 
 
 
-		 $importer  = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
+	//	 $importer  = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
 		
 		
 		
