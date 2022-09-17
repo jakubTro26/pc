@@ -132,6 +132,20 @@ function mt_toplevel_page() {
 
         $(document).ready(function(){
 
+
+
+
+
+            $(".buttons6").click(function(){
+
+                var super_var = window.super_array;
+
+                console.log(super_var);
+
+
+            });
+
+
             $(".buttons5").click(function(){
                 var main_array = window.csv;
                 var sub_arrays;
@@ -160,10 +174,6 @@ function mt_toplevel_page() {
 
 
             $(".buttons2").click(function(){
-
-
-
-               
 
                 $.ajax({
                     url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php",
