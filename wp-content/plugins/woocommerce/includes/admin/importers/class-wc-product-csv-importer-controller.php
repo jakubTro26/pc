@@ -12,11 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	//exit;
 }
 
-echo 'kuba';
+
 
 if ( ! class_exists( 'WP_Importer' ) ) {
 	return;
 }
+
+echo 'kuba';
 
 /**
  * Product importer controller - handles file upload and forms in admin.
