@@ -152,7 +152,7 @@ function mt_toplevel_page() {
                     type: "POST",
                 success: function(response) {
                     console.log(response);
-                    console.log('jeden');
+                    
                     },
                 error: function(xhr) {
                      console.log(xhr);

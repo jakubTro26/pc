@@ -153,7 +153,13 @@ set_time_limit(600);
 $var =$_POST;
 
 foreach($var as $v){
-    var_dump($v);
+    foreach ($v as $adr){
+        do_ajax_product_import('/home4/smakolyk' . $adr);
+    }
+
+
+
+    
 }
 
 
