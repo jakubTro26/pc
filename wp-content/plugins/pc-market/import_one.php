@@ -3,6 +3,11 @@ ini_set('max_execution_time', '6000');
 set_time_limit(6000);
 
 
+if ( ! defined( 'WC_ABSPATH' ) ) {
+	define( 'WC_ABSPATH', '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/' );
+}
+
+
 
 	 function do_ajax_product_import($file) {
 		global $wpdb;
@@ -11,8 +16,8 @@ set_time_limit(6000);
 
 
 		
-		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
-		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
+		include_once  WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
+		include_once  WC_ABSPATH . 'includes/import/class-wc-product-csv-importer.php';
         
 		
       
