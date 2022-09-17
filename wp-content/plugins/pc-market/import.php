@@ -13,7 +13,7 @@ $counter=0;
 
 
 	
-		
+		echo 'kuba';
 
 		//check_ajax_referer( 'wc-product-import', 'security' );
        
