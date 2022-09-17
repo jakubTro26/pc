@@ -8,15 +8,12 @@ set_time_limit(6000);
 		global $wpdb;
 
 
-        if ( ! defined( 'ABSPATH' ) ) {
-            define( 'WC_ABSPATH', dirname( WC_PLUGIN_FILE ) . '/' );
-        }
-        
+
 	
 
 		
-		include_once WC_ABSPATH . '/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
-		include_once WC_ABSPATH . '/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
         
 		
       
