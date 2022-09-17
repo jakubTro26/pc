@@ -282,6 +282,12 @@ final class WP_Hook implements Iterator, ArrayAccess {
 	 * @return mixed The filtered value after all hooked functions are applied to it.
 	 */
 	public function apply_filters( $value, $args ) {
+
+
+		if($value=='woocommerce_product_csv_importer_class'){
+			echo 'mata';
+		}
+
 		if ( ! $this->callbacks ) {
 			return $value;
 		}
