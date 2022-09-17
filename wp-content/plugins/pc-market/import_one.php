@@ -154,8 +154,8 @@ $var =$_POST;
 
 foreach($var as $v){
     foreach ($v as $adr){
-        echo 'jeden';
-        //do_ajax_product_import('/home4/smakolyk' . $adr);
+        $string = '/home4/smakolyk/' . $adr;
+        do_ajax_product_import($string);
     }
 
 
