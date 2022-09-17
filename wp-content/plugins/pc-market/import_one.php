@@ -8,7 +8,7 @@ set_time_limit(6000);
 		global $wpdb;
 
 
-	var_dump(WC_ABSPATH);
+	
 		
 
 		//check_ajax_referer( 'wc-product-import', 'security' );
@@ -17,8 +17,8 @@ set_time_limit(6000);
 		// 	wp_send_json_error( array( 'message' => __( 'Insufficient privileges to import products.', 'woocommerce' ) ) );
 		// }
 
-		include_once WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
-		include_once WC_ABSPATH . 'includes/import/class-wc-product-csv-importer.php';
+		include_once 'wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
+		include_once 'wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
         
 		// $file   = wc_clean( wp_unslash( $_POST['file'] ) ); // PHPCS: input var ok.
 		// $params = array(
