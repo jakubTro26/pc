@@ -34,7 +34,7 @@ set_time_limit(6000);
 
 
 
-
+        echo 'kuba';
             
 			
 
@@ -54,7 +54,7 @@ set_time_limit(6000);
 		);
 
         
-        echo 'kuba';
+        
 
 		// Log failures.
 		if ( 0 !== $params['start_pos'] ) {
