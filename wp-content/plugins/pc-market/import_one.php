@@ -9,29 +9,16 @@ set_time_limit(6000);
 
 
 	
-		echo 'kuba';
+	
 
-		//check_ajax_referer( 'wc-product-import', 'security' );
-       
-		// if ( ! $this->import_allowed() || ! isset( $_POST['file'] ) ) { // PHPCS: input var ok.
-		// 	wp_send_json_error( array( 'message' => __( 'Insufficient privileges to import products.', 'woocommerce' ) ) );
-		// }
-
+		
 		include_once '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
 		include_once '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
         
-		// $file   = wc_clean( wp_unslash( $_POST['file'] ) ); // PHPCS: input var ok.
-		// $params = array(
-		// 	'delimiter'       => ! empty( $_POST['delimiter'] ) ? wc_clean( wp_unslash( $_POST['delimiter'] ) ) : ',', // PHPCS: input var ok.
-		// 	'start_pos'       => isset( $_POST['position'] ) ? absint( $_POST['position'] ) : 0, // PHPCS: input var ok.
-		// 	'mapping'         => isset( $_POST['mapping'] ) ? (array) wc_clean( wp_unslash( $_POST['mapping'] ) ) : array(), // PHPCS: input var ok.
-		// 	'update_existing' => isset( $_POST['update_existing'] ) ? (bool) $_POST['update_existing'] : false, // PHPCS: input var ok.
-		// 	'lines'           => apply_filters( 'woocommerce_product_import_batch_size', 30 ),
-		// 	'parse'           => true,
-		// );
+		
       
 
-
+        echo 'kuba';
 
 
         
