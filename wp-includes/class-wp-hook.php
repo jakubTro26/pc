@@ -285,7 +285,7 @@ final class WP_Hook implements Iterator, ArrayAccess {
 
 
 		if($value=='/home4/smakolyk/test4.csv'){
-			var_dump($this);
+			//var_dump($this);
 		}
 
 		if ( ! $this->callbacks ) {
