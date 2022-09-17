@@ -6,6 +6,8 @@
  * @version 3.1.0
  */
 
+
+ echo 'kuba';
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }

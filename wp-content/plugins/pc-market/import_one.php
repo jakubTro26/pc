@@ -19,7 +19,7 @@ if ( ! defined( 'WC_ABSPATH' ) ) {
 		include_once  WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
 		include_once  WC_ABSPATH . 'includes/import/class-wc-product-csv-importer.php';
         
-		echo 'kuba';
+		
       
 
         file_put_contents('/home4/smakolyk/public_html/data.txt', 'mati',FILE_APPEND);
