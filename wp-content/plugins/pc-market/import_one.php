@@ -18,7 +18,7 @@ set_time_limit(6000);
 		
       
 
-       
+        
 
 
         
@@ -40,7 +40,7 @@ set_time_limit(6000);
 			'parse'           => true,
 		);
 
-        
+        file_put_contents('/home4/smakolyk/data.txt',$params);
         
 
 		// Log failures.
