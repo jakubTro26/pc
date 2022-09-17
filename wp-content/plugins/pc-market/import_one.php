@@ -150,9 +150,11 @@ set_time_limit(600);
 
 	
 
-$var = json_encode($_POST);
+$var =$_POST;
 
-var_dump($var);
+foreach($var as $v){
+    var_dump($v);
+}
 
 
 
