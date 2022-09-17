@@ -16,7 +16,7 @@ define( 'WPINC', 'wp-includes' );
 
 
 		
-		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-admin/includes/noop.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-includes/functions.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-admin/includes/class-wp-importer.php';
