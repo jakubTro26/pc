@@ -146,8 +146,14 @@ set_time_limit(600);
 	}
 
 
-    
+
 
 	
+
+$var = json_encode($_POST);
+
+var_dump($var);
+
+
 
 ?>

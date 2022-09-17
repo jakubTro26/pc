@@ -142,7 +142,21 @@ function mt_toplevel_page() {
 
                 super_var.forEach(element => {
 
-                    console.log(element);
+                    $.ajax({
+                    url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/import_one.php",
+                    data: { 
+                                "VarA": element
+        
+                          },
+                    cache: false,
+                    type: "POST",
+                success: function(response) {
+                    console.log(response);
+                    },
+                error: function(xhr) {
+                     console.log(xhr);
+                    }
+                    });
                     
                 });
 
