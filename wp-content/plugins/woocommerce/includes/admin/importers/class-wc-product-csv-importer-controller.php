@@ -9,13 +9,14 @@
 
 
 if ( ! defined( 'ABSPATH' ) ) {
-	//exit;
+	exit;
 }
 
 
 
 if ( ! class_exists( 'WP_Importer' ) ) {
-	//return;
+	echo 'doesnotexist';
+	return;
 }
 
 
