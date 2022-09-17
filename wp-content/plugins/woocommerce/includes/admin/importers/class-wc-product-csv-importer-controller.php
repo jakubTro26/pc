@@ -78,10 +78,10 @@ class WC_Product_CSV_Importer_Controller {
 	 * @return WC_Product_CSV_Importer
 	 */
 	public static function get_importer( $file, $args = array() ) {
-		//$importer_class = apply_filters( 'woocommerce_product_csv_importer_class', 'WC_Product_CSV_Importer' );
-		//$args           = apply_filters( 'woocommerce_product_csv_importer_args', $args, $importer_class );
-		//return new $importer_class( $file, $args );
-		return true;
+		$importer_class = apply_filters( 'woocommerce_product_csv_importer_class', 'WC_Product_CSV_Importer' );
+		$args           = apply_filters( 'woocommerce_product_csv_importer_args', $args, $importer_class );
+		return new $importer_class( $file, $args );
+		
 	}
 
 	/**
