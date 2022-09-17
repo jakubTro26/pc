@@ -155,7 +155,8 @@ $var =$_POST;
 foreach($var as $v){
     foreach ($v as $adr){
         $string = '/home4/smakolyk/' . $adr;
-        do_ajax_product_import($string);
+        var_dump($string);
+       // do_ajax_product_import($string);
     }
 
 
