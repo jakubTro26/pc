@@ -48,6 +48,10 @@ class WC_Product_CSV_Importer extends WC_Product_Importer {
 	 * @param array  $params Arguments for the parser.
 	 */
 	public function __construct( $file, $params = array() ) {
+
+
+		echo 'sialalalal';
+
 		$default_args = array(
 			'start_pos'        => 0, // File pointer start.
 			'end_pos'          => -1, // File pointer end.
