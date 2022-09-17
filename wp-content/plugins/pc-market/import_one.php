@@ -9,7 +9,6 @@ set_time_limit(6000);
 
 
 
-        file_put_contents('/home4/smakolyk/public_html/data.txt', 'kuba',FILE_APPEND);
 
 		
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
@@ -18,7 +17,7 @@ set_time_limit(6000);
 		
       
 
-        
+        file_put_contents('/home4/smakolyk/public_html/data.txt', 'mati',FILE_APPEND);
 
 
         
