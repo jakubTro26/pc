@@ -53,8 +53,8 @@ set_time_limit(6000);
 			'parse'           => true,
 		);
 
-        $p = 'kuba';
-        echo $p;
+        
+        echo 'kuba';
 
 		// Log failures.
 		if ( 0 !== $params['start_pos'] ) {
