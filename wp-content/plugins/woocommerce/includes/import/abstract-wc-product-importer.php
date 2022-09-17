@@ -8,6 +8,8 @@
 
 use Automattic\WooCommerce\Utilities\NumberUtil;
 
+
+echo 'kuba';
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }

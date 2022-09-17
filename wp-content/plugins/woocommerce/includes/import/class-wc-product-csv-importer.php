@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include dependencies.
  */
 
-echo 'kuba';
+
 
 if ( ! class_exists( 'WC_Product_Importer', false ) ) {
 	include_once dirname( __FILE__ ) . '/abstract-wc-product-importer.php';
