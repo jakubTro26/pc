@@ -9,14 +9,14 @@ set_time_limit(6000);
 
 
         if ( ! defined( 'ABSPATH' ) ) {
-            define( 'ABSPATH', dirname( WC_PLUGIN_FILE ) . '/' );
+            define( 'WC_ABSPATH', dirname( WC_PLUGIN_FILE ) . '/' );
         }
         
 	
 
 		
-		include_once ABSPATH . '/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
-		include_once ABSPATH . '/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
+		include_once WC_ABSPATH . '/wp-content/plugins/woocommerce/includes/admin/importers/class-wc-product-csv-importer-controller.php';
+		include_once WC_ABSPATH . '/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
         
 		
       
