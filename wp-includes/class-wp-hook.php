@@ -284,11 +284,11 @@ final class WP_Hook implements Iterator, ArrayAccess {
 	public function apply_filters( $value, $args ) {
 
 
-		if('woocommerce_product_csv_importer_class'==$value){
-			var_dump($value);
-			var_dump($args);
+		// if('woocommerce_product_csv_importer_class'==$value){
+		// 	var_dump($value);
+		// 	var_dump($args);
 
-		}
+		// }
 
 		if ( ! $this->callbacks ) {
 			return $value;
