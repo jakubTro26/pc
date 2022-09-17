@@ -284,7 +284,7 @@ final class WP_Hook implements Iterator, ArrayAccess {
 	public function apply_filters( $value, $args ) {
 
 
-		if($value=='woocommerce_product_csv_importer_class'){
+		if($value==='woocommerce_product_csv_importer_class'){
 			echo 'kuba';
 		}
 
