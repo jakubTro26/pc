@@ -63,7 +63,7 @@ set_time_limit(6000);
 
 
 
-		// $importer  = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
+		 $importer  = WC_Product_CSV_Importer_Controller::get_importer( $file, $params );
 		
 		
 		
@@ -153,7 +153,7 @@ set_time_limit(6000);
 $var =$_POST;
 
 
-do_ajax_product_import('/home4/smakolyk/test44.csv');
+do_ajax_product_import('/home4/smakolyk/test4.csv');
 
 // foreach($var as $v){
 //     foreach ($v as $adr){
