@@ -9,7 +9,7 @@ set_time_limit(6000);
 
 
         if ( ! defined( 'ABSPATH' ) ) {
-            define( 'ABSPATH', __DIR__ . '/' );
+            define( 'ABSPATH', dirname( WC_PLUGIN_FILE ) . '/' );
         }
         
 	
