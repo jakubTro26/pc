@@ -128,7 +128,7 @@ function mt_toplevel_page() {
                 var main_array = window.csv;
                 var sub_arrays;
                 var count_of_arrays=main_array.length/20;
-                var super_array=[];
+                window.super_array=[];
             
             for(var k=0; k<count_of_arrays;k++)
             {
@@ -140,7 +140,7 @@ function mt_toplevel_page() {
                      var l = array_elements.push(element);
                    
                     if(i==19){
-                        var o = super_array.push(array_elements);
+                        var o = window.super_array.push(array_elements);
                     }
                      }
             }
