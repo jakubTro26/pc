@@ -13,7 +13,7 @@ $counter=0;
 
 
 	
-		echo 'kuba';
+		
 
 		//check_ajax_referer( 'wc-product-import', 'security' );
        
@@ -72,13 +72,13 @@ $counter=0;
 		
 		
 		
-
+		var_dump($importer);
 
 
 
 		$results          = $importer->import();
         
-		var_dump($results);
+		//var_dump($results);
   
 		$percent_complete = $importer->get_percent_complete();
 		$error_log        = array_merge( $error_log, $results['failed'], $results['skipped'] );
