@@ -15,7 +15,14 @@ define( 'WPINC', 'wp-includes' );
 		global $wpdb;
 
 
-		
+
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-includes/plugin.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/vendor/jetpack-autoloader/class-hook-manager.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/vendor/automattic/jetpack-autoloader/src/class-hook-manager.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/src/Admin/Overrides/OrderRefund.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/src/Admin/Overrides/Order.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/jetpack-autoloader/class-hook-manager.php';
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/packages/woocommerce-blocks/vendor/automattic/jetpack-autoloader/src/class-hook-manager.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-includes/functions.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/import/class-wc-product-csv-importer.php';
