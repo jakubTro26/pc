@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 if ( ! class_exists( 'WP_Importer' ) ) {
-	echo 'doesnotexist';
+	
 	return;
 }
 
