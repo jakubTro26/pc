@@ -14,7 +14,7 @@ define( 'WPINC', 'wp-includes' );
 	 function do_ajax_product_import($file) {
 		global $wpdb;
 
-
+		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-order.php';
 
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/class-wc-order-refund.php';
 		include_once  '/home4/smakolyk/public_html/pcwordpress/wp-includes/plugin.php';
