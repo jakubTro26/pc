@@ -10,5 +10,5 @@ echo shell_exec('cd /home4/smakolyk/public_html/pcwordpress && /usr/bin/git pull
 echo shell_exec('/usr/bin/whoami 2>&1');
 echo 'mateusz2';
 }
-//boftf
+//boftff
 ?>
